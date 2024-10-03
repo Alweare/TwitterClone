@@ -3,6 +3,7 @@ import 'package:twitter_clone/content_body.dart';
 import 'package:twitter_clone/menu_bar.dart';
 import 'package:twitter_clone/top_app_bar.dart';
 
+import 'Formulaire.dart';
 import 'bottom_bar.dart';
 
 void main() {
@@ -49,17 +50,17 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-        appBar: TopApp(),
+    return Scaffold(
+        appBar: const TopApp(),
         body:Column(
 
 
 
           children: [
-            MenuBarCustom(),
+            const MenuBarCustom(),
+            Formulaire(),
 
-
-            ContentBody(),
+            const ContentBody(),
           ],
         ),
 
@@ -69,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
 
-        bottomNavigationBar:BottomBar()
+        bottomNavigationBar:const BottomBar()
     );
   }
 }

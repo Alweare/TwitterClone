@@ -38,6 +38,8 @@ dependencies:
   cupertino_icons: ^1.0.8
 
   font_awesome_flutter: ^10.0.7
+  email_validator: '^2.1.17'
+  flutter_pw_validator: ^1.6.0
 
 
 dev_dependencies:

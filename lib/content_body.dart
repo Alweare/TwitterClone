@@ -36,14 +36,16 @@ class ContentBody extends StatelessWidget {
           ],
         ),
         Container(
-          color: Colors.lightBlue,
-          child: const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text('Répondre'),
-              Text('Retweet'),
-              Text('Favoris'),
+              IconButton(onPressed: () {}, icon: FaIcon(FontAwesomeIcons.reply), color: Colors.grey,) ,
+              IconButton(onPressed: () {}, icon: FaIcon(FontAwesomeIcons.retweet, color: Colors.grey,)) ,
+              IconButton(onPressed: () {}, icon: FaIcon(FontAwesomeIcons.star, color: Colors.grey,)) ,
+
             ],
+
           ),
         ),
       ],

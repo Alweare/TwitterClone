@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class MenuBarCustom extends StatelessWidget {
   const MenuBarCustom({super.key});
@@ -10,14 +12,15 @@ class MenuBarCustom extends StatelessWidget {
         Expanded(
           child: Container(
               color: const Color(0xF958b0f0),
-              child: const Padding(
-                padding: EdgeInsets.all(25.0),
+              child: Padding(
+                padding: const EdgeInsets.all(25.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text('Nouveau'),
-                    Text('Acceuil'),
-                    Text('Rechercher'),
+                    IconButton(onPressed: () {}, icon: const FaIcon(FontAwesomeIcons.pen)),
+                    const Text('Acceuil'),
+                    IconButton(onPressed: () {}, icon: const FaIcon(FontAwesomeIcons.magnifyingGlass)),
+
                   ],
                 ),
               )),

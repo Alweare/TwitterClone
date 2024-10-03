@@ -50,6 +50,7 @@ class _FormulaireState extends State<Formulaire> {
         key: _formKey,
         child: Column(
           children: [
+            Text('Connexion à twitter', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w800),),
             TextFormField(
 
               decoration: const InputDecoration(
@@ -84,10 +85,11 @@ class _FormulaireState extends State<Formulaire> {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: submit,
-                child: Text('Connexion'),
+                style: const ButtonStyle(backgroundColor: WidgetStatePropertyAll(Colors.blue)),
+                child: const Text('Connexion', style: TextStyle(color: Colors.white),) ),
 
               ),
-            )
+
           ],
         ));
   }
